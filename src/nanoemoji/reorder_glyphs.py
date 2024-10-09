@@ -61,8 +61,7 @@ class ReorderRule(ABC):
     """A rule to reorder something in a font to match the fonts glyph order."""
 
     @abstractmethod
-    def apply(self, font: ttLib.TTFont, value: otBase.BaseTable) -> None:
-        ...
+    def apply(self, font: ttLib.TTFont, value: otBase.BaseTable) -> None: ...
 
 
 @dataclass(frozen=True)
