@@ -2,7 +2,7 @@ name: Continuous Test + Deploy
 
 on:
   push:
-    branches: [main]
+    branches: [main, ci/*]
     tags: ["v*.*.*"]
   pull_request:
     branches: ['**']
